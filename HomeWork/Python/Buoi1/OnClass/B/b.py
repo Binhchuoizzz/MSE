@@ -29,3 +29,4 @@ MSFT.loc[2:4]
 
 AAPL['Adj Close'] = AAPL['Adj Close'].round(decimals=3)
 AAPL.head()
+print("test")
