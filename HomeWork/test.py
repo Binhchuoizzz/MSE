@@ -1,7 +1,7 @@
 import openai
 
 # Thêm API Key của bạn vào đây
-openai.api_key = "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"
+openai.api_key = ""
 
 def chat_with_ai():
     print("Chat với AI (Nhập 'exit' để thoát):")
