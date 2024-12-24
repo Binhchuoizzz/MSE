@@ -1,0 +1,2 @@
+sub system for linux
+ai in jupyter
