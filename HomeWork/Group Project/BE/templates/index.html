@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tóm tắt và Tạo Mindmap từ Video YouTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 8px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 30px;
+        }
+        .result h2 {
+            color: #333;
+        }
+        .summary-text {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .mindmap {
+            margin-top: 30px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .error {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tóm tắt và Tạo Mindmap từ Video YouTube</h1>
+        
+        <form id="summarizeForm">
+            <div class="form-group">
+                <label for="url">Nhập URL video YouTube:</label>
+                <input type="url" id="url" name="url" placeholder="Ví dụ: https://www.youtube.com/watch?v=dQw4w9WgXcQ" required>
+            </div>
+            <button type="submit">Tóm Tắt và Tạo Mindmap</button>
+        </form>
+
+        <div class="result">
+            <h2>Kết Quả:</h2>
+            <div id="error-message" class="error" style="display: none;"></div>
+            <div id="summary" class="summary-text" style="display: none;"></div>
+            <div class="mindmap" id="mindmap" style="display: none;">
+                <h3>Mindmap:</h3>
+                <img id="mindmap-image" src="" alt="Mindmap">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("summarizeForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const url = document.getElementById("url").value;
+
+            const data = { url: url };
+
+            // Reset previous results
+            document.getElementById("error-message").style.display = "none";
+            document.getElementById("summary").style.display = "none";
+            document.getElementById("mindmap").style.display = "none";
+
+            // Show loading message
+            document.getElementById("summary").textContent = "Đang xử lý, vui lòng chờ...";
+
+            fetch('/summarize', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    // Show error message
+                    document.getElementById("error-message").textContent = data.error;
+                    document.getElementById("error-message").style.display = "block";
+                } else {
+                    // Show summary and mindmap
+                    document.getElementById("summary").textContent = data.summary;
+                    document.getElementById("summary").style.display = "block";
+
+                    document.getElementById("mindmap-image").src = data.mindmap_path;
+                    document.getElementById("mindmap").style.display = "block";
+                }
+            })
+            .catch(error => {
+                document.getElementById("error-message").textContent = "Đã có lỗi xảy ra. Vui lòng thử lại.";
+                document.getElementById("error-message").style.display = "block";
+            });
+        });
+    </script>
+
+</body>
+</html>
