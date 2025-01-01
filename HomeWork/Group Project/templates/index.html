@@ -13,6 +13,12 @@
             background-color: #F3F4F6;
             color: #333;
             overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #2E2E2E;
+            color: white;
         }
 
         header {
@@ -33,6 +39,25 @@
         header p {
             font-size: 1.2em;
             animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Toggle button for Dark Mode */
+        .toggle-dark-mode {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-dark-mode:hover {
+            background-color: #3700b3;
         }
 
         /* Container */
@@ -144,7 +169,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid white;
+            border-top: 4px solid #6200ea;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -168,6 +193,9 @@
     <p>Enter your text below to get a summarized version and a generated mindmap.</p>
 </header>
 
+<!-- Dark Mode Toggle Button -->
+<button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
 <div class="container">
     <form method="POST" id="textForm">
         <textarea name="text_input" placeholder="Enter your text here..." required></textarea>
@@ -187,6 +215,7 @@
     <p>&copy; 2025 Text Summarizer. All rights reserved.</p>
 </footer>
 
+<!-- Loader Spinner -->
 <div class="loading" id="loadingSpinner"></div>
 
 <script>
@@ -219,6 +248,11 @@
             document.getElementById('loadingSpinner').style.display = 'none';
         });
     });
+
+    // Chức năng bật/tắt chế độ tối
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
 </script>
 
 </body>
