@@ -27,15 +27,10 @@ def generate_mindmap(text):
     for idx, sentence in enumerate(sentences):
         node = {
             "id": idx,
-            "text": sentence[:50]  # Chỉ lấy 50 ký tự đầu của mỗi câu
+            "text": sentence[:100]  # Chỉ lấy 50 ký tự đầu của mỗi câu
         }
         mindmap["nodes"].append(node)
         
-        if idx > 0:
-            if "edges" not in mindmap:
-                mindmap["edges"] = []
-            mindmap["edges"].append({"from": idx-1, "to": idx})
-    
     return mindmap
 
 @app.route("/", methods=["GET", "POST"])
