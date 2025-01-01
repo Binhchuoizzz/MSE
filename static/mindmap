@@ -1,0 +1,8 @@
+// MindMap
+digraph {
+	0 [label="Cats are known for their agility and elegance, mov"]
+	1 [label="They have soft fur that comes in various colors li"]
+	0 -> 1
+	2 [label="Their eyes are striking, often glowing in shades o"]
+	1 -> 2
+}
