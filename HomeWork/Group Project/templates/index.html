@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Summarizer and Mindmap Generator</title>
+    <title>MindTube</title>
     <style>
         /* Global Styles */
         body {
@@ -105,6 +105,37 @@
             background-color: #3700b3;
         }
 
+        /* Nút Generate Mindmap */
+        #generateMindmapButton {
+            background-color: #6200ea;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #generateMindmapButton:hover {
+            background-color: #3700b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);  /* Di chuyển nút lên một chút */
+        }
+
+        #generateMindmapButton:active {
+            transform: translateY(2px);  /* Hiệu ứng khi nhấn nút */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #generateMindmapButton:focus {
+            outline: none;
+        }
+
         /* Output Section */
         .output-section {
             margin-top: 30px;
@@ -199,8 +230,10 @@
 <div class="container">
     <form method="POST" id="textForm">
         <textarea name="text_input" placeholder="Enter your text here..." required></textarea>
-        <input type="submit" value="Summarize and Generate Mindmap">
+        <input type="submit" value="Summarize">
     </form>
+
+    <button id="generateMindmapButton" onclick="generateMindmap()">Generate Mindmap</button>
 
     <div class="output-section">
         <h2>Summary (JSON):</h2>
@@ -219,7 +252,7 @@
 <div class="loading" id="loadingSpinner"></div>
 
 <script>
-    async function fetchSummaryAndMindmap() {
+    async function fetchSummary() {
         const textInput = document.querySelector("textarea[name='text_input']").value;
         const response = await fetch("/", {
             method: "POST",
@@ -232,8 +265,24 @@
         });
         const data = await response.json();
 
-        // Hiển thị tóm tắt và mindmap dưới dạng JSON
+        // Hiển thị tóm tắt dưới dạng JSON
         document.querySelector("#summary").textContent = JSON.stringify(data.summary, null, 2);
+    }
+
+    async function generateMindmap() {
+        const textInput = document.querySelector("textarea[name='text_input']").value;
+        const response = await fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                text_input: textInput
+            })
+        });
+        const data = await response.json();
+
+        // Hiển thị mindmap dưới dạng JSON
         document.querySelector("#mindmap").textContent = JSON.stringify(data.mindmap, null, 2);
     }
 
@@ -243,7 +292,7 @@
         // Hiện spinner loading khi đang chờ kết quả
         document.getElementById('loadingSpinner').style.display = 'block';
 
-        fetchSummaryAndMindmap().then(() => {
+        fetchSummary().then(() => {
             // Ẩn spinner loading sau khi nhận được kết quả
             document.getElementById('loadingSpinner').style.display = 'none';
         });
