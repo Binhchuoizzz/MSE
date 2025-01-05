@@ -1,0 +1,30 @@
+1. What was the change in stock price over time?
+2. What was the average daily return of each stock?
+3. What are the moving averages of the stocks over different time windows?
+4. What is the correlation between the daily returns of the different stocks?
+5. How much value is at risk (VaR) when investing in a stock?
+6. How can we attempt to predict future stock behavior?
+
+
+URL : https://colab.research.google.com/drive/1r5c8em2v8ssrtbRbsBR1JztKMyOAr4_l
+-------------------------------------------------------------------------------------------------------
+
+
+
+1. Phân tích sự thay đổi giá cổ phiếu theo thời gian:
+   - Trích xuất và vẽ đồ thị sự thay đổi giá cổ phiếu theo thời gian.
+   
+2. Tính lợi suất hàng ngày trung bình của mỗi cổ phiếu:
+   - Tính toán lợi suất hàng ngày (daily return) của từng cổ phiếu và tính trung bình.
+   
+3. Tính toán trung bình động (moving averages) của các cổ phiếu qua các cửa sổ thời gian khác nhau:
+   - Sử dụng phương pháp trung bình động (ví dụ: SMA, EMA) để tính toán trung bình của cổ phiếu trong các cửa sổ thời gian (như 30 ngày, 60 ngày, 200 ngày).
+
+4. Phân tích mối tương quan giữa lợi suất hàng ngày của các cổ phiếu khác nhau:
+   - Tính toán hệ số tương quan (correlation) giữa lợi suất hàng ngày của các cổ phiếu khác nhau để xác định mối liên hệ giữa chúng.
+
+5. Tính toán giá trị rủi ro (VaR) khi đầu tư vào cổ phiếu:
+   - Áp dụng phương pháp tính giá trị rủi ro (Value at Risk - VaR) để xác định mức độ rủi ro khi đầu tư vào cổ phiếu.
+
+6. Dự đoán hành vi cổ phiếu trong tương lai:
+   - Áp dụng các mô hình thống kê hoặc học máy (machine learning) để dự đoán giá cổ phiếu hoặc lợi suất trong tương lai.

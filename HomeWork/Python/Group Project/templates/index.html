@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindTube</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3F4F6;
+            color: #333;
+            overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #2E2E2E;
+            color: white;
+        }
+
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.6s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Toggle button for Dark Mode */
+        .toggle-dark-mode {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-dark-mode:hover {
+            background-color: #3700b3;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.6s ease-in-out 0.3s;
+        }
+
+        textarea {
+            width: 100%;
+            height: 180px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            resize: vertical;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea:focus {
+            border-color: #6200ea;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #6200ea;
+            color: white;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3700b3;
+        }
+
+        /* Nút Generate Mindmap */
+        #generateMindmapButton {
+            background-color: #6200ea;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #generateMindmapButton:hover {
+            background-color: #3700b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);  /* Di chuyển nút lên một chút */
+        }
+
+        #generateMindmapButton:active {
+            transform: translateY(2px);  /* Hiệu ứng khi nhấn nút */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #generateMindmapButton:focus {
+            outline: none;
+        }
+
+        /* Output Section */
+        .output-section {
+            margin-top: 30px;
+        }
+
+        .output-section h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 300px;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1em;
+            color: #888;
+            padding: 15px;
+            background-color: #6200ea;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Loading Spinner */
+        .loading {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #6200ea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Text Summarizer & Mindmap Generator</h1>
+    <p>Enter your text below to get a summarized version and a generated mindmap.</p>
+</header>
+
+<!-- Dark Mode Toggle Button -->
+<button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<div class="container">
+    <form method="POST" id="textForm">
+        <textarea name="text_input" placeholder="Enter your text here..." required></textarea>
+        <input type="submit" value="Summarize">
+    </form>
+
+    <button id="generateMindmapButton" onclick="generateMindmap()">Generate Mindmap</button>
+
+    <div class="output-section">
+        <h2>Summary (JSON):</h2>
+        <pre id="summary">Your summarized text will appear here...</pre>
+
+        <h2>Mindmap (JSON):</h2>
+        <pre id="mindmap">Your mindmap structure will appear here...</pre>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Text Summarizer. All rights reserved.</p>
+</footer>
+
+<!-- Loader Spinner -->
+<div class="loading" id="loadingSpinner"></div>
+
+<script>
+    async function fetchSummary() {
+        const textInput = document.querySelector("textarea[name='text_input']").value;
+        const response = await fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                text_input: textInput
+            })
+        });
+        const data = await response.json();
+
+        // Hiển thị tóm tắt dưới dạng JSON
+        document.querySelector("#summary").textContent = JSON.stringify(data.summary, null, 2);
+    }
+
+    async function generateMindmap() {
+        const textInput = document.querySelector("textarea[name='text_input']").value;
+        const response = await fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: new URLSearchParams({
+                text_input: textInput
+            })
+        });
+        const data = await response.json();
+
+        // Hiển thị mindmap dưới dạng JSON
+        document.querySelector("#mindmap").textContent = JSON.stringify(data.mindmap, null, 2);
+    }
+
+    document.querySelector("#textForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Hiện spinner loading khi đang chờ kết quả
+        document.getElementById('loadingSpinner').style.display = 'block';
+
+        fetchSummary().then(() => {
+            // Ẩn spinner loading sau khi nhận được kết quả
+            document.getElementById('loadingSpinner').style.display = 'none';
+        });
+    });
+
+    // Chức năng bật/tắt chế độ tối
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
