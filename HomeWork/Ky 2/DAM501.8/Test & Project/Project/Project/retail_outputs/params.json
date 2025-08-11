@@ -1,0 +1,7 @@
+{
+  "dataset": "Retail Analysis on Large Dataset (Kaggle)",
+  "product_field": "Product_Type",
+  "algo": "fpmax",
+  "min_support": 0.01,
+  "min_confidence": 0.5
+}
