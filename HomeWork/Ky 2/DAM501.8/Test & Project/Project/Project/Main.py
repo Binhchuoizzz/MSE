@@ -19,7 +19,7 @@ FILE_PATH       = r"E:\MSE\HomeWork\Ky 2\DAM501.8\Test & Project\Project\Project
 INVOICE_COL     = "Transaction_ID"     # hóa đơn
 ITEM_COL        = "Product_Category"   # mặt hàng / group
 ID_PARITY       = "even"                # "odd" = ID lẻ (Apriori) | "even" = ID chẵn (FP-Max + FP-Growth)
-USE_MULTI_ONLY  = False                 # chỉ dùng giỏ có >= 2 item (khuyến nghị cho MBA) (=FALSE Chấp nhận insight “lỏng” hơn, nhưng sẽ kéo được support lên để sinh luật.)
+USE_MULTI_ONLY  = True                 # Bật USE_MULTI_ONLY=True để chỉ giữ hoá đơn có ≥2 mặt hàng
 TARGET_RANGE    = (50, 300)            # mục tiêu số lượng luật để thuyết trình
 MIN_LIFT        = 1.0                  # nới 1.0 cho dataset thưa (có thể tăng 1.1+ nếu nhiều luật)
 OUTDIR          = "out"
