@@ -1,0 +1,33 @@
+esphome:
+  name: bedroom-light
+  friendly_name: Bedroom Light (Căn 1006)
+
+esp8266:
+  board: esp01_1m   # Nếu dùng NodeMCU/D1 mini thì đổi thành 'nodemcuv2' hoặc 'd1_mini'
+
+logger:
+
+api:
+  encryption:
+    key: "uB3h9wB2Xl6nR6Q6B7h7QmE3T5qP2iJ4F5mM6sL3uA8="
+  password: "esp_api_1006"
+
+ota:
+  password: "esp_ota_1006"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Bedroom-Light-AP"
+    password: "12345678"
+
+captive_portal:
+
+switch:
+  - platform: gpio
+    pin: GPIO0
+    name: "Đèn phòng khách"
+    id: den_phong_khach
+    icon: "mdi:lightbulb"
+    restore_mode: RESTORE_DEFAULT_OFF

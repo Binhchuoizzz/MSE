@@ -1,0 +1,7 @@
+tôi_đã_về:
+  speech:
+    text: "Chào mừng bạn đã về nhà! Tôi sẽ bật đèn cho bạn."
+  action:
+    - service: script.turn_on
+      target:
+        entity_id: script.scene_home_arrival

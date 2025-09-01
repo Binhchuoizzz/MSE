@@ -1,0 +1,9 @@
+alias: Kích hoạt khi về nhà
+trigger:
+  - platform: conversation
+    command: !include ../data/phrases_home.yaml
+action:
+  - service: script.turn_on
+    target:
+      entity_id: script.scene_home_arrival
+mode: single
