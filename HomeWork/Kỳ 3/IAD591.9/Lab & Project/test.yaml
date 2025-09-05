@@ -1,0 +1,15 @@
+intent_script:
+  LampTurnOn:
+    action:
+      service: switch.turn_on
+      target:
+        entity_id: switch.bedroom_lamp
+    speech:
+      text: "Turning on the lamp."
+  LampTurnOff:
+    action:
+      service: switch.turn_off
+      target:
+        entity_id: switch.bedroom_lamp
+    speech:
+      text: "Turning off the lamp."

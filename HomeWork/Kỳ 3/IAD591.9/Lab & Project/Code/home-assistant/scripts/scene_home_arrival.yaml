@@ -1,0 +1,7 @@
+scene_home_arrival:
+  alias: "Scene: về nhà"
+  sequence:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.den_phong_khach
+  mode: single

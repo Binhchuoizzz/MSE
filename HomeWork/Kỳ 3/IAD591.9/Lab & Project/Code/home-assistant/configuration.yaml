@@ -1,0 +1,7 @@
+homeassistant:
+
+conversation:
+
+automation: !include_dir_merge_list automations/
+intent_script: !include_dir_merge_named intent_script/
+script: !include_dir_merge_named scripts/
