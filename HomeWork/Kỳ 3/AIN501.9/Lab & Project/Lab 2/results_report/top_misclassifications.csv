@@ -1,0 +1,9 @@
+true_class,pred_class,count,true_name,pred_name
+1,2,4455,Trouser,Pullover
+1,7,4157,Trouser,Sneaker
+0,2,788,T-shirt/top,Pullover
+1,4,385,Trouser,Coat
+0,7,210,T-shirt/top,Sneaker
+0,4,2,T-shirt/top,Coat
+1,5,2,Trouser,Sandal
+1,8,1,Trouser,Bag
