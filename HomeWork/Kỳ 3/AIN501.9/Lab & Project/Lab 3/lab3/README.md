@@ -1,0 +1,1 @@
+Images lớn, nên được chia thành 3 parts để upload lên FLM
