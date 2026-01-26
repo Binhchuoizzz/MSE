@@ -1,0 +1,17 @@
+# Requirements for NLP501 Exercise 2 Project
+# Python version
+python>=3.10
+
+# Core libraries
+numpy>=1.24
+pandas>=2.0
+
+# NLP utilities
+nltk>=3.8.1
+
+# Notebook environment (optional but recommended)
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# Visualization (optional)
+matplotlib>=3.8
