@@ -1,0 +1,505 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/">
+    <bib:Article rdf:about="https://doi.org/10.1186/s40537-020-00318-5">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.1186/s40537-020-00318-5</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sarker</foaf:surname>
+                        <foaf:givenName>Iqbal H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kayes</foaf:surname>
+                        <foaf:givenName>A. S. M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Badsha</foaf:surname>
+                        <foaf:givenName>Shahriar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Alqahtani</foaf:surname>
+                        <foaf:givenName>Hamed</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Watters</foaf:surname>
+                        <foaf:givenName>Paul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ng</foaf:surname>
+                        <foaf:givenName>Alex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_406"/>
+        <dc:title>Cybersecurity data science: an overview from machine learning perspective</dc:title>
+        <dcterms:abstract>Abstract In a computing context, cybersecurity is undergoing massive shifts in technology and its operations in recent days, and data science is driving the change. Extracting security incident patterns or insights from cybersecurity data and building corresponding data-driven model , is the key to make a security system automated and intelligent. To understand and analyze the actual phenomena with data, various scientific methods, machine learning techniques, processes, and systems are used, which is commonly known as data science. In this paper, we focus and briefly discuss on cybersecurity data science , where the data is being gathered from relevant cybersecurity sources, and the analytics complement the latest data-driven patterns for providing more effective security solutions. The concept of cybersecurity data science allows making the computing process more actionable and intelligent as compared to traditional ones in the domain of cybersecurity. We then discuss and summarize a number of associated research issues and future directions . Furthermore, we provide a machine learning based multi-layered framework for the purpose of cybersecurity modeling. Overall, our goal is not only to discuss cybersecurity data science and relevant methods but also to focus the applicability towards data-driven intelligent decision making for protecting the systems from cyber-attacks.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1186/s40537-020-00318-5</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_406">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/406/Cybersecurity data science an overview from machine learning_8ffbdy0d.pdf"/>
+        <dc:title>Cybersecurity data science an overview from machine learning_8ffbdy0d.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1007/s40745-022-00444-2">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.1007/s40745-022-00444-2</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sarker</foaf:surname>
+                        <foaf:givenName>Iqbal H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_409"/>
+        <dc:title>Machine Learning for Intelligent Data Analysis and Automation in Cybersecurity: Current and Future Prospects</dc:title>
+        <dcterms:abstract>Abstract Due to the digitization and Internet of Things revolutions, the present electronic world has a wealth of cybersecurity data. Efficiently resolving cyber anomalies and attacks is becoming a growing concern in today’s cyber security industry all over the world. Traditional security solutions are insufficient to address contemporary security issues due to the rapid proliferation of many sorts of cyber-attacks and threats. Utilizing artificial intelligence knowledge, especially machine learning technology, is essential to providing a dynamically enhanced, automated, and up-to-date security system through analyzing security data. In this paper, we provide an extensive view of machine learning algorithms, emphasizing how they can be employed for intelligent data analysis and automation in cybersecurity through their potential to extract valuable insights from cyber data. We also explore a number of potential real-world use cases where data-driven intelligence, automation, and decision-making enable next-generation cyber protection that is more proactive than traditional approaches. The future prospects of machine learning in cybersecurity are eventually emphasized based on our study, along with relevant research directions. Overall, our goal is to explore not only the current state of machine learning and relevant methodologies but also their applicability for future cybersecurity breakthroughs.</dcterms:abstract>
+        <dc:date>2022</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s40745-022-00444-2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_409">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/409/Machine Learning for Intelligent Data Analysis and Automatio_y0293ucr.pdf"/>
+        <dc:title>Machine Learning for Intelligent Data Analysis and Automatio_y0293ucr.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.14569/ijacsa.2024.0150389">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.14569/ijacsa.2024.0150389</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muhammad</foaf:surname>
+                        <foaf:givenName>Roslaily</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ismail</foaf:surname>
+                        <foaf:givenName>Saiful Adli</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hassan</foaf:surname>
+                        <foaf:givenName>Noor Hafizah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_421"/>
+        <dc:title>Botnet Detection and Incident Response in Security Operation Center (SOC): A Proposed Framework</dc:title>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.14569/ijacsa.2024.0150389</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_421">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/421/Botnet Detection and Incident Response in Security Operation_k3_up4h5.pdf"/>
+        <dc:title>Botnet Detection and Incident Response in Security Operation_k3_up4h5.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.34218/ijaiml_04_01_011">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.34218/ijaiml_04_01_011</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Manne</foaf:surname>
+                        <foaf:givenName>Tirumala Ashish Kumar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_424"/>
+        <dc:title>ARTIFICIAL INTELLIGENCE IN HYBRID CLOUD SECURITY: ENHANCING THREAT DETECTION AND RESPONSE</dc:title>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.34218/ijaiml_04_01_011</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_424">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/424/ARTIFICIAL INTELLIGENCE IN HYBRID CLOUD SECURITY ENHANCING T_phm4itm3.pdf"/>
+        <dc:title>ARTIFICIAL INTELLIGENCE IN HYBRID CLOUD SECURITY ENHANCING T_phm4itm3.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.3389/fcomp.2020.00036">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.3389/fcomp.2020.00036</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ibrahim</foaf:surname>
+                        <foaf:givenName>Amani S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thiruvady</foaf:surname>
+                        <foaf:givenName>Dhananjay</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schneider</foaf:surname>
+                        <foaf:givenName>Jean-Guy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abdelrazek</foaf:surname>
+                        <foaf:givenName>Mohamed</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_427"/>
+        <dc:title>The Challenges of Leveraging Threat Intelligence to Stop Data Breaches</dc:title>
+        <dcterms:abstract>Data breaches and security incidents are becoming increasingly costly and statistics show that hackers are highly motivated to acquire confidential data as the financial benefits are substantial. Hence, business data has become a top priority to be compromised. Threat Intelligence has been recently introduced by organisations as a means to gain greater visibility of cyber threats, especially data breaches, in order to better protect their digital assets. A well-planned implementation of threat intelligence enables organisations to predict and (at least partially) prevent cyber crime, such as data breaches or data exfilteration ({\ie} attempts to move data outside an organization’s secure perimeters). This allows an organisation to better understand different aspects of threats, including identifying the adversary and how and why they intend to compromise digital assets, consequences of attacks, which assets can be compromised, to what level and how to detect threats, how to respond to them. A key enabler to implement threat intelligence is to build sophisticated data-driven architectures using machine learning that allows an organisation's cyber data (stored in different silos throughout an organisation's digital infrastructure) to be managed effectively. However, one of the biggest challenges of machine learning in cybersecurity is to enable an efficient implementation that scales in today's complex threat landscapes and digital infrastructure, respectively. In this paper, we review the data breaches problem and discuss the challenges of implementing machine learning to mitigate security threats and data intelligence to predict cyber threats that could potentially lead to data breaches leakage. Then illustrate how the future of effective threat intelligence is closely linked to efficiently applying machine learning approaches in this field, and outline future research directions in this area</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.3389/fcomp.2020.00036</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_427">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/427/The Challenges of Leveraging Threat Intelligence to Stop Dat_uqul_yvv.pdf"/>
+        <dc:title>The Challenges of Leveraging Threat Intelligence to Stop Dat_uqul_yvv.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.36948/ijfmr.2024.v06i06.31587">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.36948/ijfmr.2024.v06i06.31587</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>-</foaf:surname>
+                        <foaf:givenName>Santhosh Chitraju Gopal Varma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_430"/>
+        <dc:title>AI-Enhanced Cloud Security: Proactive Threat Detection and Response Mechanisms</dc:title>
+        <dcterms:abstract>AI-enhanced cloud security is revolutionizing the way organizations approach cybersecurity by leveraging advanced technologies like machine learning, natural language processing, and deep learning to proactively detect and respond to cyber threats. This paper explores the integration of AI into cloud security systems, highlighting its role in improving threat detection accuracy, reducing response times, and enhancing data protection across cloud environments. The paper also examines various AI-driven tools such as intrusion detection systems, behaviour analytics, and automated threat response mechanisms, which provide real-time defence capabilities. Despite its potential, the adoption of AI in cloud security faces challenges, including data privacy concerns, algorithmic bias, integration with legacy systems, and the high computational costs associated with AI models. Furthermore, ethical, and regulatory challenges complicate the deployment and scalability of AI in cloud security. By addressing these challenges and fostering continuous innovation, organizations can unlock the full potential of AI-enhanced security systems. This paper aims to provide a comprehensive overview of the current state of AI-driven cloud security, identify the key challenges faced by organizations, and offer insights into future developments and opportunities in this rapidly evolving field.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.36948/ijfmr.2024.v06i06.31587</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_430">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/430/AI-Enhanced Cloud Security Proactive Threat Detection and Re_2x8m0j8a.pdf"/>
+        <dc:title>AI-Enhanced Cloud Security Proactive Threat Detection and Re_2x8m0j8a.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1038/s41598-024-51578-7">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.1038/s41598-024-51578-7</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Venkatesan</foaf:surname>
+                        <foaf:givenName>K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rahayu</foaf:surname>
+                        <foaf:givenName>Syarifah Bahiyah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_436"/>
+        <dc:title>Blockchain security enhancement: an approach towards hybrid consensus algorithms and machine learning techniques</dc:title>
+        <dcterms:abstract>In this paper, we propose hybrid consensus algorithms that combine machine learning (ML) techniques to address the challenges and vulnerabilities in blockchain networks. Consensus Protocols make ensuring agreement among the applicants in the distributed systems difficult. However, existing mechanisms are more vulnerable to cyber-attacks. Previous studies extensively explore the influence of cyber attacks and highlight the necessity for effective preventive measures. This research presents the integration of ML techniques with the proposed hybrid consensus algorithms and advantages over predicting cyber-attacks, anomaly detection, and feature extraction. Our hybrid approaches leverage and optimize the proposed consensus protocols' security, trust, and robustness. However, this research also explores the various ML techniques with hybrid consensus algorithms, such as Delegated Proof of Stake Work (DPoSW), Proof of Stake and Work (PoSW), Proof of CASBFT (PoCASBFT), Delegated Byzantine Proof of Stake (DBPoS) for security enhancement and intelligent decision making in consensus protocols. Here, we also demonstrate the effectiveness of the proposed methodology within the decentralized networks using the ProximaX blockchain platform. This study shows that the proposed research framework is an energy-efficient mechanism that maintains security and adapts to dynamic conditions. It also integrates privacy-enhancing features, robust consensus mechanisms, and ML approaches to detect and prevent security threats. Furthermore, the practical implementation of these ML-based hybrid consensus models faces significant challenges, such as scalability, latency, throughput, resource requirements, and potential adversarial attacks. These challenges must be addressed to ensure the successful implementation of the blockchain network for real-world scenarios.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1038/s41598-024-51578-7</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_436">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/436/Blockchain security enhancement an approach towards hybrid c_5c2iofsi.pdf"/>
+        <dc:title>Blockchain security enhancement an approach towards hybrid c_5c2iofsi.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.71097/ijsat.v16.i1.2718">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.71097/ijsat.v16.i1.2718</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>-</foaf:surname>
+                        <foaf:givenName>Sandeep Jarugula</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_439"/>
+        <dc:title>AI-Driven Real-Time Transaction Monitoring and Automated Threat Response: Revolutionizing Payment Security</dc:title>
+        <dcterms:abstract>The integration of AI and automation technologies is fundamentally transforming payment security in financial institutions worldwide. As transaction volumes grow and fraud techniques become more sophisticated, traditional rule-based systems and manual processes are being replaced by intelligent systems capable of real-time monitoring and automated threat response. These advanced systems operate through behavioral analysis, pattern recognition, contextual assessment, and anomaly detection to identify potential fraud with unprecedented accuracy while reducing false positives. Automated response mechanisms implement graduated interventions based on risk levels, balancing security with customer experience. Despite challenges in data quality, latency management, and regulatory explainability requirements, financial institutions are pioneering solutions through collaborative data sharing, edge computing architectures, and explainable AI frameworks. Emerging innovations including federated learning, quantum-resistant cryptography, and behavioral biometrics point to continued evolution in this critical domain, creating a security ecosystem that adapts and learns continuously to protect the global financial infrastructure.</dcterms:abstract>
+        <dc:date>2025</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.71097/ijsat.v16.i1.2718</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_439">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/439/AI-Driven Real-Time Transaction Monitoring and Automated Thr_id9dilmh.pdf"/>
+        <dc:title>AI-Driven Real-Time Transaction Monitoring and Automated Thr_id9dilmh.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.24138/jcomss-2022-0033">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.24138/jcomss-2022-0033</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oujezsky</foaf:surname>
+                        <foaf:givenName>Vaclav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Horvath</foaf:surname>
+                        <foaf:givenName>Tomas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Holik</foaf:surname>
+                        <foaf:givenName>Martin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_442"/>
+        <dc:title>Security Incident Response Automation for xPON Networks</dc:title>
+        <dc:date>2022</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.24138/jcomss-2022-0033</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_442">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/442/Security Incident Response Automation for xPON Networks_5ckqo8ue.pdf"/>
+        <dc:title>Security Incident Response Automation for xPON Networks_5ckqo8ue.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://core.ac.uk/download/614443225.pdf">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Abdulhussein</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>Mustafa</foaf:surname></foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_445"/>
+        <dc:title>The Impact of Artificial Intelligence and Machine Learning on Organizations Cybersecurity</dc:title>
+        <dcterms:abstract>As internet technology proliferate in volume and complexity, the ever-evolving landscape of malicious cyberattacks presents unprecedented security risks in cyberspace. Cybersecurity challenges have been further exacerbated by the continuous growth in the prevalence and sophistication of cyber-attacks. These threats have the capacity to disrupt business operations, erase critical data, and inflict reputational damage, constituting an existential threat to businesses, critical services, and infrastructure. The escalating threat is further compounded by the malicious use of artificial intelligence (AI) and machine learning (ML), which have increasingly become tools in the cybercriminal arsenal. In this dynamic landscape, the emergence of offensive AI introduces a new dimension to cyber threats. The current wave of attacks is surpassing human capabilities, incorporating AI to outsmart and outpace traditional, rule-based detection tools. The advent of offensive AI allows cybercriminals to execute targeted attacks with unprecedented speed and scale, operating stealthily and evading conventional security measures. As offensive AI looms on the horizon, organizations face the imperative to adopt new, more sophisticated defenses. Human-driven responses to cyber-attacks are struggling to match the speed and complexity of automated threats. In anticipation of this growing challenge, the implementation of advanced technologies, including AI-driven defenses, becomes crucial. This dissertation explored the profound impact of both AI and ML on cybersecurity in the United States. Through a qualitative, multiple case study, combining a comprehensive literature review with insights from cybersecurity experts, the research identified key trends, challenges, and opportunities for utilizing AI in cybersecurity</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://core.ac.uk/download/614443225.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_445">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/445/The Impact of Artificial Intelligence and Machine Learning o_1nf2e16o.pdf"/>
+        <dc:title>The Impact of Artificial Intelligence and Machine Learning o_1nf2e16o.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://core.ac.uk/download/554501031.pdf">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                   <foaf:Person><foaf:surname>Costa</foaf:surname></foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>da</foaf:surname>
+                        <foaf:givenName>Mário João Amaro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_456"/>
+        <dc:title>Aquisição e modelação de Threat Intelligence para desenvolver um sistema de reputação</dc:title>
+        <dcterms:abstract>A internet é a tecnologia crucial da Era da Informação, pois permite melhorar o desempenho das organizações e agilizar processos de negócio. A pandemia que marcou a segunda década do século XXI, a COVID-19, veio reforçar esta situação, pois fez com que o teletrabalho se tornasse uma realidade na generalidade das organizações, resultando num crescimento exponencial dos dispositivos conectados às redes das organizações. Consequentemente, os dispositivos vulneráveis a ataques, bem como os pontos de acesso à rede aumentaram, como tal a segurança da informação, das infraestruturas digitais e a forma como são armazenados os dados, têm gerado uma preocupação crescente no seio das organizações. Paralelamente, a threat intelligence aplicada no âmbito da cibersegurança é preponderante, pois permite partilhar dados sobre indicadores de compromisso com o objetivo de mitigar ameaças, bem como minimizar o impacto das ameaças do dia zero nos sistemas de informação. O presente trabalho visa o desenvolvimento de um modelo preciso e robusto para calcular a reputação de ameaças, tendo como base a threat intelligence. Desta forma, foi desenvolvido um conector compatível com a plataforma OpenCTI, utilizada para recolher e partilhar informações sobre as ameaças. Este conector permite recolher dados de plataformas externas e, através de um algoritmo, avaliar o nível de ameaça (ThreatScore) do indicador de compromisso, bem como o nível de confiança (TrustRating) da pontuação atribuída. A framework desenvolvida é de prevenção de ameaças, ou seja, é um mecanismo complementar às defesas da organização para a tomada de decisão.Internet is the crucial technology of the information age. It improves company’s performance and speeds up the business process. The pandemic situation that marked the second decade of the 21st century, COVID-19, reinforced this situation, many public and private organizations implemented teleworking, resulting in an exponential growth of devices connected to organizations networks. Therefore, devices vulnerable to attacks, as well as network access points, have increased, this generated a growing concern within organizations, about the security of information, digital infrastructures and the way in which data are stored. At the same time, threat intelligence applied to the cybersecurity is beginning to be predominant, as it allows sharing data about indicators of compromise (IoC) with the aim of mitigating threat risks, as well as minimizing the impact of zero-day vulnerability to steal vital and sensitive data from the companies. In the present work, we focus on developing a lightweight and accurate model to calculate a reputation score, based in the acquisition of threat intelligence. In this way, a compatible connector was developed for the OpenCTI platform, this platform is used to collect and share information about threats. The developed connector allows collecting data from external platforms and using an algorithm to calculate the threat level (ThreatScore) of the indicator of compromise analyzed, as well as the confidence level (TrustRating) of the assigned score. This framework is designed to complement, not to replace, cybersecurity program and risk management processes, providing credible information for decision making</dcterms:abstract>
+        <dc:date>2022</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://core.ac.uk/download/554501031.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_456">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/456/Aquisição e modelação de Threat Intelligence para desenvolve_vy9i6jsw.pdf"/>
+        <dc:title>Aquisição e modelação de Threat Intelligence para desenvolve_vy9i6jsw.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1007/s10462-024-10890-4">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:identifier>DOI 10.1007/s10462-024-10890-4</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mutalib</foaf:surname>
+                        <foaf:givenName>Noor Hazlina Abdul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sabri</foaf:surname>
+                        <foaf:givenName>Aznul Qalid Md</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wahab</foaf:surname>
+                        <foaf:givenName>Ainuddin Wahid Abdul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abdullah</foaf:surname>
+                        <foaf:givenName>Erma Rahayu Mohd Faizal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>AlDahoul</foaf:surname>
+                        <foaf:givenName>Nouar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_462"/>
+        <dc:title>Explainable deep learning approach for advanced persistent threats (APTs) detection in cybersecurity: a review</dc:title>
+        <dcterms:abstract>Abstract In recent years, Advanced Persistent Threat (APT) attacks on network systems have increased through sophisticated fraud tactics. Traditional Intrusion Detection Systems (IDSs) suffer from low detection accuracy, high false-positive rates, and difficulty identifying unknown attacks such as remote-to-local (R2L) and user-to-root (U2R) attacks. This paper addresses these challenges by providing a foundational discussion of APTs and the limitations of existing detection methods. It then pivots to explore the novel integration of deep learning techniques and Explainable Artificial Intelligence (XAI) to improve APT detection. This paper aims to fill the gaps in the current research by providing a thorough analysis of how XAI methods, such as Shapley Additive Explanations (SHAP) and Local Interpretable Model-agnostic Explanations (LIME), can make black-box models more transparent and interpretable. The objective is to demonstrate the necessity of explainability in APT detection and propose solutions that enhance the trustworthiness and effectiveness of these models. It offers a critical analysis of existing approaches, highlights their strengths and limitations, and identifies open issues that require further research. This paper also suggests future research directions to combat evolving threats, paving the way for more effective and reliable cybersecurity solutions. Overall, this paper emphasizes the importance of explainability in enhancing the performance and trustworthiness of cybersecurity systems.</dcterms:abstract>
+        <dc:date>2024</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s10462-024-10890-4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_462">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/462/Explainable deep learning approach for advanced persistent t_ao5yix2p.pdf"/>
+        <dc:title>Explainable deep learning approach for advanced persistent t_ao5yix2p.pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>
